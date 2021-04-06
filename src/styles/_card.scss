@@ -1,0 +1,33 @@
+div.card-title {
+    margin-top: 25%;
+}
+
+div.h5 {
+    font-size: 3.25rem;
+}
+
+div.card {
+    border-bottom: blueviolet;
+}
+
+div.card-header {
+    background-color: #fff;
+    // padding: 0.75rem 3.25rem;
+}
+
+div.card-header {
+    background-color: #fff;
+    padding: 0.75rem 3.25rem;
+}
+div.card-header:hover {
+    color: hsl(14, 88%, 65%);
+}
+div.card-body {
+    background-color: #fff;
+
+    padding: 0.75rem 3.25rem;
+}
+
+div.bold {
+    font-weight: bold;
+}
