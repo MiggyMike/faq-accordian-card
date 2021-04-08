@@ -2,9 +2,14 @@ import React from 'react';
 import './App.scss';
 import { Accordion, Card, Container, Row, Col } from 'react-bootstrap';
 import CustomToggle from './components/CustomToggle';
-import WomanDesktop from './images/illustration-woman-online-desktop.svg';
-import BgDesktop from './images/bg-pattern-desktop.svg';
-import Box from './images/illustration-box-desktop.svg';
+// import WomanSvg from './images/illustration-woman-online-desktop.svg';
+// import PatternSvg from './images/bg-pattern-desktop.svg';
+// import BoxSvg from './images/illustration-box-desktop.svg';
+
+import { ReactComponent as WomanSvg } from './images/illustration-woman-online-desktop.svg';
+
+import { ReactComponent as PatternSvg } from './images/bg-pattern-desktop.svg';
+import { ReactComponent as BoxSvg } from './images/illustration-box-desktop.svg';
 function App() {
     return (
         <div className='App'>
@@ -12,28 +17,10 @@ function App() {
                 <Card className='main-card'>
                     <Row>
                         <Col xs md={4} lg={6}>
-                            <div>
-                                <div>
-                                    <img
-                                        className='bg-pattern'
-                                        src={BgDesktop}
-                                        alt=' shadow'
-                                    />
-                                </div>
-                                <div>
-                                    <img
-                                        className='womandesk'
-                                        src={WomanDesktop}
-                                        alt='woman using computer'
-                                    />
-                                </div>
-                                <div>
-                                    <img
-                                        className='boxdesk'
-                                        src={Box}
-                                        alt='box'
-                                    />
-                                </div>
+                            <div className='holder'>
+                                <PatternSvg className='pattern-svg' />
+                                <BoxSvg className='box-svg' />
+                                <WomanSvg className='woman-svg' />
                             </div>
                         </Col>
                         <Col xs md={4} lg={6}>
