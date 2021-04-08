@@ -30,37 +30,81 @@ div.card-body {
     padding: 0.75rem 0;
 }
 
-img.bg-pattern {
-    // position: relative;
-    // width: fit-content;
-    // right: 106%;
-    // bottom: 28%;
-    // -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-    // clip-path: inset(32% 0% 8.3% 59.1% round 0 0 0 3%);
-
+div.holder {
+    width: 120px; /* Change this width and height. See that the triangle remains centered */
+    height: 120px;
+    border: 20px solid white; /* Change this border width. See that the triangle remains centered */
+    border-radius: 50%; /* Comment out to change the circle to a square.  See pos:abs left below */
     position: relative;
-    right: 106%;
-    bottom: 50%;
-    -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-    clip-path: inset(31% 0% 16.5% 59.1% round 0 0 0 3%);
 }
 
-img.womandesk {
+svg.box-svg {
+    z-index: 1;
     position: absolute;
-    right: 29%;
-    bottom: 56%;
+    top: 504px;
+    right: 0;
+    bottom: 0;
+    left: -115px; /* Use this if the outer box is a circle */
+    /*    left:0;     /* Use this if the outer box is a square */
+    margin: auto;
+    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-    clip-path: inset(0% 0% 0% 17.2% round 0 0 0 0);
+    clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
 }
-
-img.boxdesk {
-    right: 80%;
-    bottom: 60%;
+svg.woman-svg {
     position: absolute;
-
-    // -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-    // clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+    top: 400px;
+    right: 0;
+    bottom: 0;
+    left: -94px; /* Use this if the outer box is a circle */
+    /*    left:0;     /* Use this if the outer box is a square */
+    margin: auto;
+    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
+    -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+    clip-path: inset(0% 0% 0% 15.6% round 0 0 0 0);
 }
+svg.pattern-svg {
+    position: absolute;
+    top: 254px;
+    right: 0;
+    bottom: 0;
+    left: -588px; /* Use this if the outer box is a circle */
+    /*    left:0;     /* Use this if the outer box is a square */
+    margin: auto;
+    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
+    -webkit-clip-path: inset(30% 0% 17.3% 59.1% round 0 0 0 2%);
+    clip-path: inset(30% 0% 17.3% 59.1% round 0 0 0 2%);
+}
+// img.PatternSvg {
+//     // position: relative;
+//     // width: fit-content;
+//     // right: 106%;
+//     // bottom: 28%;
+//     // -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+//     // clip-path: inset(32% 0% 8.3% 59.1% round 0 0 0 3%);
+
+//     position: relative;
+//     right: 106%;
+//     bottom: 50%;
+//     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+//     clip-path: inset(31% 0% 16.5% 59.1% round 0 0 0 3%);
+// }
+
+// img.WomanSvg {
+//     position: absolute;
+//     right: 29%;
+//     bottom: 56%;
+//     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+//     clip-path: inset(0% 0% 0% 17.2% round 0 0 0 0);
+// }
+
+// img.BoxSvg {
+//     right: 80%;
+//     bottom: 60%;
+
+//     // -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+//     // clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
+// }
 
 // div.accordion {
 //     padding: 0 10px;
