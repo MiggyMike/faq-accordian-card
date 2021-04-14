@@ -1,34 +1,68 @@
 import React from 'react';
 import './App.scss';
-import { Accordion, Card, Container, Row, Col } from 'react-bootstrap';
+import { Accordion, Card, Container, Row, Col, Image } from 'react-bootstrap';
 import CustomToggle from './components/CustomToggle';
-// import WomanSvg from './images/illustration-woman-online-desktop.svg';
-// import PatternSvg from './images/bg-pattern-desktop.svg';
-// import BoxSvg from './images/illustration-box-desktop.svg';
 
-import { ReactComponent as WomanSvg } from './images/illustration-woman-online-desktop.svg';
+import WomanSvg from './images/illustration-woman-online-desktop.svg';
+import PatternSvg from './images/bg-pattern-desktop.svg';
+import BoxSvg from './images/illustration-box-desktop.svg';
 
-import { ReactComponent as PatternSvg } from './images/bg-pattern-desktop.svg';
-import { ReactComponent as BoxSvg } from './images/illustration-box-desktop.svg';
+import MobileWomanSvg from './images/illustration-woman-online-mobile.svg';
+import MobilePatternSvg from './images/bg-pattern-mobile.svg';
+
 function App() {
     return (
         <div className='App'>
             <Container>
-                <Card className='main-card'>
+                <Card className='main-card '>
                     <Row>
-                        <Col xs md={4} lg={6}>
-                            <div className='holder'>
-                                <PatternSvg className='pattern-svg' />
-                                <BoxSvg className='box-svg' />
-                                <WomanSvg className='woman-svg' />
-                            </div>
+                        <Col xs={12} sm={12} md={6} lg={6}>
+                            <Card className='svg-container mx-auto'>
+                                <Image
+                                    className='pattern-svg'
+                                    src={PatternSvg}
+                                    alt=' shadow'
+                                />
+
+                                <Image
+                                    className='woman-svg'
+                                    src={WomanSvg}
+                                    alt='woman using computer'
+                                    fluid
+                                />
+
+                                <Image
+                                    className='box-svg'
+                                    src={BoxSvg}
+                                    alt='box'
+                                />
+                                <Image
+                                    className='m-pattern-svg'
+                                    src={MobilePatternSvg}
+                                    alt=' shadow'
+                                />
+
+                                <Image
+                                    className='m-woman-svg'
+                                    src={MobileWomanSvg}
+                                    alt='woman using computer'
+                                    fluid
+                                />
+                            </Card>
                         </Col>
-                        <Col xs md={4} lg={6}>
-                            <Accordion defaultActiveKey='0' className='m-3'>
+
+                        <Col xs={12} sm={12} md={6} lg={6}>
+                            <Accordion
+                                defaultActiveKey='0'
+                                className='m-3'
+                                xs
+                                s
+                                md
+                                lg={6}>
                                 <Card>
                                     <Card.Title>FAQ</Card.Title>
                                 </Card>
-                                <Card className='border-0'>
+                                <Card className=' mx-auto'>
                                     <CustomToggle
                                         as={Card.Header}
                                         eventKey='1'
@@ -72,7 +106,7 @@ function App() {
                                 </Card>
                                 <Card>
                                     <CustomToggle as={Card.Header} eventKey='4'>
-                                        Can I cancel my subscription?{' '}
+                                        Can I cancel my subscription?
                                     </CustomToggle>
                                     <Accordion.Collapse eventKey='4'>
                                         <Card.Body>
@@ -84,7 +118,7 @@ function App() {
                                 </Card>
                                 <Card>
                                     <CustomToggle as={Card.Header} eventKey='5'>
-                                        Do you provide additional support?{' '}
+                                        Do you provide additional support?
                                     </CustomToggle>
                                     <Accordion.Collapse eventKey='5'>
                                         <Card.Body>
