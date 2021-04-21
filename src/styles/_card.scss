@@ -4,7 +4,7 @@ div.h5 {
 
 div.card {
     border: none;
-    border-radius: 1.25em;
+    // border-radius: 1.25em;
 }
 
 div.main-card {
@@ -20,6 +20,7 @@ div.card-title {
 div.card-header {
     background-color: #fff;
     padding: 0.75rem 0;
+    border-bottom: 2px solid #e7e7e9;
 }
 div.icon {
     float: right;
@@ -31,6 +32,7 @@ div.card-header:hover {
 div.card-body {
     background-color: #fff;
     padding: 0.75rem 0;
+    border-bottom: 1px solid #e7e7e9;
 }
 div.svg-container {
     display: inline-block;
@@ -38,7 +40,6 @@ div.svg-container {
     width: 100%;
     padding-bottom: 100%;
     vertical-align: middle;
-    outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
 
     overflow: inherit;
 }
@@ -51,8 +52,6 @@ img.woman-svg {
     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
     clip-path: inset(0% 0% 0% 17.2% round 0 0 0 0);
     display: inline-block;
-
-    outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
 }
 img.pattern-svg {
     position: absolute;
@@ -61,7 +60,6 @@ img.pattern-svg {
     bottom: 0;
     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
     clip-path: inset(30% 0% 12% 60.2% round 0 0 0 0);
-    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
 }
 img.box-svg {
     position: absolute;
@@ -71,18 +69,15 @@ img.box-svg {
     left: -94px;
     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
     clip-path: inset(0% 0% 0% 0% round 0 0 0 0);
-    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
 }
 
 img.m-woman-svg {
     display: none;
     visibility: hidden;
-    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
 }
 img.m-pattern-svg {
     display: none;
     visibility: hidden;
-    // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
 }
 
 svg.m-woman-svg {
@@ -94,7 +89,7 @@ svg.m-pattern-svg {
 
 @media (min-width: 992px) and (max-width: 1198px) {
     div.main-card {
-        min-height: 38vh;
+        min-height: 43.25vh;
     }
 
     div.svg-container {
@@ -103,7 +98,6 @@ svg.m-pattern-svg {
         width: 100%;
         padding-bottom: 100%;
         vertical-align: middle;
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
         overflow: inherit;
     }
     img.woman-svg {
@@ -115,7 +109,6 @@ svg.m-pattern-svg {
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 17.2% round 0 0 0 0);
         display: inline-block;
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
     img.pattern-svg {
         position: absolute;
@@ -124,7 +117,6 @@ svg.m-pattern-svg {
         bottom: 0;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(30% 0% 17% 61.2% round 0 0 0 3%);
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
     img.box-svg {
         position: absolute;
@@ -134,13 +126,12 @@ svg.m-pattern-svg {
         left: -94px;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 0% round 0 0 0 0);
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     div.main-card {
-        min-height: 38vh;
+        min-height: 52vh;
     }
     div.svg-container {
         display: inline-block;
@@ -148,7 +139,6 @@ svg.m-pattern-svg {
         width: 129%;
         padding-bottom: 100%;
         vertical-align: middle;
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
         overflow: inherit;
     }
     img.woman-svg {
@@ -160,7 +150,6 @@ svg.m-pattern-svg {
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 18% round 0 0 0 0);
         display: inline-block;
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
     img.pattern-svg {
         position: absolute;
@@ -169,7 +158,6 @@ svg.m-pattern-svg {
         bottom: 0;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(30% 0% 17% 63.2% round 0 0 0 3%);
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
     img.box-svg {
         position: absolute;
@@ -179,7 +167,6 @@ svg.m-pattern-svg {
         left: -102px;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 0% round 0 0 0 0);
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
 }
 // Small devices (landscape phones, 576px and up) or 992
@@ -191,9 +178,9 @@ svg.m-pattern-svg {
 
     div.main-card {
         margin: 0 auto;
-
         width: 85%;
         border-radius: 1.25em;
+        min-height: 50vh;
     }
     div.card-header {
         background-color: #fff;
@@ -225,13 +212,62 @@ svg.m-pattern-svg {
         left: 0%;
         bottom: 16%;
         visibility: visible;
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
     }
     img.m-pattern-svg {
         display: inherit;
         position: relative;
         left: 9%;
         visibility: visible;
-        // outline: 1px dashed blue; /* TEST Outline. To Be DELETED */
+    }
+}
+// Small devices (landscape phones, 576px and up) or 992
+@media (max-width: 575px) {
+    div.h5 {
+        font-size: 3.25rem;
+        text-align: center;
+    }
+
+    div.main-card {
+        margin: 0 auto;
+        width: 85%;
+        border-radius: 1.25em;
+        // min-height: vh;
+    }
+    div.card-header {
+        background-color: #fff;
+        padding: 0.75rem 0;
+    }
+    div.card-body {
+        background-color: #fff;
+        opacity: 50%;
+        padding: 0.75rem 0;
+    }
+    img.box-svg {
+        visibility: hidden;
+    }
+    img.woman-svg {
+        visibility: hidden;
+    }
+    img.pattern-svg {
+        visibility: hidden;
+    }
+    div.svg-container {
+        visibility: hidden;
+        padding-bottom: 0;
+    }
+
+    img.m-woman-svg {
+        margin: 0 auto;
+        display: inherit;
+        position: absolute;
+        left: 0%;
+        bottom: 16%;
+        visibility: visible;
+    }
+    img.m-pattern-svg {
+        display: inherit;
+        position: relative;
+        left: 9%;
+        visibility: visible;
     }
 }
