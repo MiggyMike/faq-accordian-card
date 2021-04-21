@@ -18,6 +18,7 @@ const CustomToggle = ({ children, eventKey, callback }) => {
             type='link'
             style={{
                 fontWeight: isCurrentEventKey ? 'bold' : '',
+                borderBottom: isCurrentEventKey ? 'none' : '',
             }}
             onClick={decoratedOnClick}>
             {children}
