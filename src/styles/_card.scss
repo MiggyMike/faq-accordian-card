@@ -12,10 +12,6 @@ div.main-card {
     border-radius: 1.25em;
 }
 
-div.card-title {
-    padding-top: 10%;
-}
-
 div.card-header {
     background-color: #fff;
     padding: 0.75rem 0;
@@ -138,16 +134,7 @@ svg.m-pattern-svg {
         clip-path: inset(0% 0% 0% 18% round 0 0 0 0);
         // display: inline-block;
     }
-    img.pattern-svg {
-        position: absolute;
-        top: -290px;
-        right: 17%;
-        bottom: 0;
-        -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-        clip-path: inset(30% 0% 0% 63.2% round 0 0 0 3%);
 
-        visibility: hidden;
-    }
     img.box-svg {
         position: absolute;
         width: 8.75rem;
@@ -191,9 +178,7 @@ svg.m-pattern-svg {
     img.woman-svg {
         visibility: hidden;
     }
-    img.pattern-svg {
-        visibility: hidden;
-    }
+
     div.svg-container {
         visibility: hidden;
         padding-bottom: 0;
