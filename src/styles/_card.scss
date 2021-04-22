@@ -9,7 +9,6 @@ div.card {
 
 div.main-card {
     margin: 0 auto;
-    min-height: 40vh;
     border-radius: 1.25em;
 }
 
@@ -37,11 +36,11 @@ div.card-body {
 div.svg-container {
     display: inline-block;
     position: relative;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: -574px -288px;
+    background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 100%;
-    vertical-align: middle;
-
-    overflow: inherit;
+    height: 100%;
 }
 img.woman-svg {
     position: absolute;
@@ -51,16 +50,8 @@ img.woman-svg {
     left: -82px;
     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
     clip-path: inset(0% 0% 0% 17.2% round 0 0 0 0);
-    display: inline-block;
 }
-img.pattern-svg {
-    position: absolute;
-    top: -293px;
-    right: 29%;
-    bottom: 0;
-    -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-    clip-path: inset(30% 0% 12% 60.2% round 0 0 0 0);
-}
+
 img.box-svg {
     position: absolute;
     top: 208px;
@@ -69,6 +60,8 @@ img.box-svg {
     left: -94px;
     -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
     clip-path: inset(0% 0% 0% 0% round 0 0 0 0);
+    display: block;
+    overflow: visible;
 }
 
 img.m-woman-svg {
@@ -88,39 +81,29 @@ svg.m-pattern-svg {
 }
 
 @media (min-width: 992px) and (max-width: 1198px) {
-    div.main-card {
-        min-height: 43.25vh;
-    }
-
     div.svg-container {
         display: inline-block;
         position: relative;
-        width: 100%;
-        padding-bottom: 100%;
-        vertical-align: middle;
-        overflow: inherit;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: -591px -288px;
+        background-repeat: no-repeat;
+        width: 456px;
+        height: 100%;
     }
     img.woman-svg {
         position: absolute;
         top: 72px;
         right: 0;
         bottom: 0;
-        left: -77px;
+        left: -79px;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 17.2% round 0 0 0 0);
         display: inline-block;
     }
-    img.pattern-svg {
-        position: absolute;
-        top: -290px;
-        right: 17%;
-        bottom: 0;
-        -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-        clip-path: inset(30% 0% 17% 61.2% round 0 0 0 3%);
-    }
+
     img.box-svg {
         position: absolute;
-        top: 208px;
+        top: 198px;
         right: 0;
         bottom: 0;
         left: -94px;
@@ -130,26 +113,30 @@ svg.m-pattern-svg {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    div.main-card {
-        min-height: 52vh;
+    div.card-header {
+        background-color: #fff;
+        padding: 0.75rem 0;
     }
+
     div.svg-container {
         display: inline-block;
         position: relative;
-        width: 129%;
-        padding-bottom: 100%;
-        vertical-align: middle;
-        overflow: inherit;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: -40em -18em;
+        background-repeat: no-repeat;
+        width: 25em;
+        height: 100%;
     }
+
     img.woman-svg {
         position: absolute;
         top: 72px;
         right: 0;
         bottom: 0;
-        left: -77px;
+        left: -74px;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 18% round 0 0 0 0);
-        display: inline-block;
+        // display: inline-block;
     }
     img.pattern-svg {
         position: absolute;
@@ -157,19 +144,24 @@ svg.m-pattern-svg {
         right: 17%;
         bottom: 0;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
-        clip-path: inset(30% 0% 17% 63.2% round 0 0 0 3%);
+        clip-path: inset(30% 0% 0% 63.2% round 0 0 0 3%);
+
+        visibility: hidden;
     }
     img.box-svg {
         position: absolute;
-        top: 185px;
+        width: 8.75rem;
+        top: 191px;
         right: 0;
         bottom: 0;
-        left: -102px;
+        left: -75px;
         -webkit-clip-path: inset(0% 0% 0% 17.1% round 0 0 0 0);
         clip-path: inset(0% 0% 0% 0% round 0 0 0 0);
+        display: block;
+        overflow: visible;
     }
 }
-// Small devices (landscape phones, 576px and up) or 992
+
 @media (max-width: 767px) {
     div.h5 {
         font-size: 3.25rem;
@@ -178,9 +170,11 @@ svg.m-pattern-svg {
 
     div.main-card {
         margin: 0 auto;
-        width: 85%;
+        // width: 85%;
         border-radius: 1.25em;
-        min-height: 50vh;
+        min-height: 23.25vh;
+        display: auto;
+        overflow: visible;
     }
     div.card-header {
         background-color: #fff;
@@ -220,7 +214,7 @@ svg.m-pattern-svg {
         visibility: visible;
     }
 }
-// Small devices (landscape phones, 576px and up) or 992
+
 @media (max-width: 575px) {
     div.h5 {
         font-size: 3.25rem;
@@ -231,7 +225,9 @@ svg.m-pattern-svg {
         margin: 0 auto;
         width: 85%;
         border-radius: 1.25em;
-        // min-height: vh;
+        min-height: 30vh;
+        display: auto;
+        overflow: visible;
     }
     div.card-header {
         background-color: #fff;
