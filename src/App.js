@@ -49,7 +49,7 @@ function App() {
                             sm={10}
                             md={6}
                             lg={5}
-                            className='mx-auto my-4'>
+                            className='mx-auto my-5'>
                             <Accordion defaultActiveKey='0' className='m-4'>
                                 <Card>
                                     <Card.Title>FAQ</Card.Title>
