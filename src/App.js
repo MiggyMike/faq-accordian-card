@@ -4,7 +4,6 @@ import { Accordion, Card, Container, Row, Col, Image } from 'react-bootstrap';
 import CustomToggle from './components/CustomToggle';
 
 import WomanSvg from './images/illustration-woman-online-desktop.svg';
-import PatternSvg from './images/bg-pattern-desktop.svg';
 import BoxSvg from './images/illustration-box-desktop.svg';
 
 import MobileWomanSvg from './images/illustration-woman-online-mobile.svg';
@@ -16,14 +15,8 @@ function App() {
             <Container>
                 <Card className='main-card '>
                     <Row>
-                        <Col xs={12} sm={12} md={6} lg={6}>
-                            <Card className='svg-container mx-auto'>
-                                <Image
-                                    className='pattern-svg'
-                                    src={PatternSvg}
-                                    alt=' shadow'
-                                />
-
+                        <Col xs={12} sm={12} md={5} lg={6}>
+                            <div className='svg-container mx-auto'>
                                 <Image
                                     className='woman-svg'
                                     src={WomanSvg}
@@ -48,21 +41,20 @@ function App() {
                                     alt='woman using computer'
                                     fluid
                                 />
-                            </Card>
+                            </div>
                         </Col>
 
-                        <Col xs={12} sm={12} md={6} lg={6}>
-                            <Accordion
-                                defaultActiveKey='0'
-                                className='m-3'
-                                xs
-                                s
-                                md
-                                lg={6}>
+                        <Col
+                            xs={12}
+                            sm={10}
+                            md={6}
+                            lg={5}
+                            className='mx-auto my-4'>
+                            <Accordion defaultActiveKey='0' className='m-4'>
                                 <Card>
                                     <Card.Title>FAQ</Card.Title>
                                 </Card>
-                                <Card className=' mx-auto'>
+                                <Card>
                                     <CustomToggle
                                         as={Card.Header}
                                         eventKey='1'
