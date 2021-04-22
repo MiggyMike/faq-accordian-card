@@ -46,7 +46,7 @@ function App() {
 
                         <Col
                             xs={12}
-                            sm={10}
+                            sm={12}
                             md={6}
                             lg={5}
                             className='mx-auto my-5'>
