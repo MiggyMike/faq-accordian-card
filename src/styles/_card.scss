@@ -145,11 +145,11 @@ svg.m-pattern-svg {
     }
     div.main-card {
         margin: 0 auto;
-        // width: 85%;
+        min-width: 280px;
         border-radius: 1.25em;
-        min-height: 23.25vh;
-        display: auto;
-        overflow: visible;
+        background-image: url(../images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top;
     }
     div.card-header {
         background-color: #fff;
@@ -172,34 +172,58 @@ svg.m-pattern-svg {
         padding-bottom: 0;
     }
     img.m-woman-svg {
+        display: block;
         margin: 0 auto;
-        display: inherit;
         position: absolute;
-        left: 0%;
-        bottom: 16%;
+        top: -105px;
+        left: 7em;
         visibility: visible;
     }
     img.m-pattern-svg {
         display: inherit;
         position: relative;
         left: 9%;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 500px) {
+    img.m-woman-svg {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: -105px;
+        left: 6em;
+        visibility: visible;
+    }
+}
+@media (max-width: 425px) {
+    img.m-woman-svg {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: -105px;
+        left: 3.25em;
+        visibility: visible;
+    }
+}
+@media (max-width: 375px) {
+    img.m-woman-svg {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: -105px;
+        left: 1.5em;
         visibility: visible;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 320px) {
     div.h5 {
         font-size: 3.25rem;
         text-align: center;
     }
-    div.main-card {
-        margin: 0 auto;
-        width: 85%;
-        border-radius: 1.25em;
-        min-height: 30vh;
-        display: auto;
-        overflow: visible;
-    }
+
     div.card-header {
         background-color: #fff;
         padding: 0.75rem 0;
@@ -223,17 +247,17 @@ svg.m-pattern-svg {
         padding-bottom: 0;
     }
     img.m-woman-svg {
+        display: block;
         margin: 0 auto;
-        display: inherit;
         position: absolute;
-        left: 0%;
-        bottom: 16%;
+        top: -105px;
+        left: 0;
         visibility: visible;
     }
     img.m-pattern-svg {
         display: inherit;
         position: relative;
         left: 9%;
-        visibility: visible;
+        visibility: hidden;
     }
 }
