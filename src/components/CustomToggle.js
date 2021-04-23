@@ -26,6 +26,7 @@ const CustomToggle = ({ children, eventKey, callback }) => {
                 className='icon'
                 style={{
                     transform: isCurrentEventKey ? ' rotate(180deg)' : '',
+                    transition: isCurrentEventKey ? '1000ms' : '',
                 }}
                 onClick={decoratedOnClick}>
                 {<IconSvg />}
