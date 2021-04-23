@@ -13,7 +13,7 @@ function App() {
     return (
         <div className='App'>
             <Container>
-                <Card className='main-card '>
+                <Card className='main-card'>
                     <Row>
                         <Col xs={12} sm={12} md={5} lg={6}>
                             <div className='svg-container mx-auto'>
@@ -52,7 +52,9 @@ function App() {
                             className='mx-auto my-5'>
                             <Accordion defaultActiveKey='0' className='m-4'>
                                 <Card>
-                                    <Card.Title>FAQ</Card.Title>
+                                    <Card.Title className=' mb-4'>
+                                        FAQ
+                                    </Card.Title>
                                 </Card>
                                 <Card>
                                     <CustomToggle
