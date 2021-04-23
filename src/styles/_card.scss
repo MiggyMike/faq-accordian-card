@@ -1,5 +1,11 @@
+@import './config';
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 div.h5 {
-    font-size: 3.25rem;
+    font-size: 3.5em;
+    font-weight: 700;
+    color: $VeryDarkDesaturatedBlue;
 }
 div.card {
     border: none;
@@ -10,20 +16,24 @@ div.main-card {
     border-radius: 1.25em;
 }
 div.card-header {
+    color: $VeryDarkGrayishBlue;
     background-color: #fff;
     padding: 0.75rem 0;
-    border-bottom: 2px solid #e7e7e9;
+    border-bottom: 2px solid $LightGrayishBlue;
 }
+
 div.card-header:hover {
-    color: hsl(14, 88%, 65%);
+    color: $SoftRed;
 }
 div.icon {
     float: right;
 }
 div.card-body {
+    color: $DarkGrayishBlue;
+    font-size: 0.85rem;
     background-color: #fff;
     padding: 0.75rem 0;
-    border-bottom: 1px solid #e7e7e9;
+    border-bottom: 1px solid $LightGrayishBlue;
 }
 div.svg-container {
     display: inline-block;
