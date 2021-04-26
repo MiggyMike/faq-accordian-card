@@ -5,7 +5,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 ## Table of contents
 
 -   [Overview](#overview)
-    -   [The challenge](#the-challenge)
+-   [The challenge](#the-challenge)
     -   [Screenshot](#screenshot)
     -   [Links](#links)
 -   [My process](#my-process)
@@ -50,7 +50,7 @@ Users should be able to:
 Utilizing Bootstrap and it's components was helpful, regarding the CustomToggle component. I was able to manipulate that to handle some stylistic changes that needed to occur with certain actions.
 
 ```
-    <Card.Header
+<Card.Header
             type='link'
             style={{
                 fontWeight: isCurrentEventKey ? 'bold' : '',
@@ -71,7 +71,7 @@ Utilizing Bootstrap and it's components was helpful, regarding the CustomToggle 
     );
 ```
 
-I did have issues for the longest time tryign to make the background-pattern work with clips and such. After doing a ton of searches and finding what I thoght would be complete solutions, I then discovered I could just make it the bg-image ofthe card itself. >\_<
+I did have issues for the longest time tryign to make the background-pattern work with clips and such. After doing a ton of searches and finding what I thoght would be complete solutions, I then discovered I could just make it the bg-image ofthe card itself.
 
 ### Continued development
 
