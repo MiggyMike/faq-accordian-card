@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [here](https://github.com/MiggyMike/faq-accordian-card)
--   Live Site URL: [here](https://fm-faq-mjj.netlify.app)
+-   [Solution URL](https://github.com/MiggyMike/faq-accordian-card)
+-   [Live Site](https://fm-faq-mjj.netlify.app)
 
 ## My process
 
