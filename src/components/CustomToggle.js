@@ -22,15 +22,21 @@ const CustomToggle = ({ children, eventKey, callback }) => {
             }}
             onClick={decoratedOnClick}>
             {children}
-            <div
+            <button
+                mr-auto
                 className='icon'
                 style={{
+                    border: 'none',
+                    margin: '0.25rem',
+                    cursor: 'pointer',
+                    backgroundColor: '#FFF',
+                    float: 'right',
                     transform: isCurrentEventKey ? ' rotate(180deg)' : '',
                     transition: isCurrentEventKey ? '1000ms' : '',
                 }}
                 onClick={decoratedOnClick}>
                 {<IconSvg />}
-            </div>
+            </button>
         </Card.Header>
     );
 };
