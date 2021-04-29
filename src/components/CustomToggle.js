@@ -23,11 +23,9 @@ const CustomToggle = ({ children, eventKey, callback }) => {
             onClick={decoratedOnClick}>
             {children}
             <button
-                mr-auto
                 className='icon'
                 style={{
                     border: 'none',
-                    margin: '0.25rem',
                     cursor: 'pointer',
                     backgroundColor: '#FFF',
                     float: 'right',
