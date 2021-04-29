@@ -46,11 +46,11 @@ function App() {
 
                         <Col
                             xs={12}
-                            sm={12}
+                            sm={10}
                             md={6}
                             lg={5}
                             className='mx-auto my-5'>
-                            <Accordion defaultActiveKey='0' className='m-4'>
+                            <Accordion defaultActiveKey='0' className='m-3'>
                                 <Card>
                                     <Card.Title className=' mb-4'>
                                         FAQ
